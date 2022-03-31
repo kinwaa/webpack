@@ -12,11 +12,11 @@ module.exports = {
    },
    plugins: [
       new HtmlWebpackPlugin({
-         title: 'Output Management'
+         title: 'Caching'
       })
    ],
    output: {
-      filename: '[name].bundle.js',
+      filename: '[name].[contenthash].js',
       path: path.resolve(__dirname, 'dist'),
       clean: true
    }
